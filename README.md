@@ -45,7 +45,7 @@ The repository maintains the directory layout from Assignment 3[cite: 1]:
 ├── README.md                  # System setup and execution instructions
 ├── requirements.txt           # Python package dependencies
 └── run_queries.py             # CLI runner entrypoint
-
+```
 ---
 
 ## 3. Environment Setup & Configuration
