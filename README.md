@@ -56,17 +56,17 @@ Standard virtual environment tools (venv)
 
 Installation
 Bash
-# 1. Create and activate virtual environment
+1. Create and activate virtual environment
 python -m venv .venv
 
-# On Linux / macOS:
-source .venv/bin/activate
-# On Windows (Command Prompt):
-.venv\Scripts\activate
-# On Windows (PowerShell):
-.venv\Scripts\Activate.ps1
+* On Linux / macOS:
+ source .venv/bin/activate
+* On Windows (Command Prompt):
+ .venv\Scripts\activate
+* On Windows (PowerShell):
+ .venv\Scripts\Activate.ps1
 
-# 2. Install dependencies
+2. Install dependencies 
 pip install -r requirements.txt
 
 
@@ -75,12 +75,12 @@ The orchestrator reads LLM credentials directly from the environment.
 Do not hardcode or commit API keys to version control.
 Configure the following variables in your shell or inside a local .env file:
 Bash
-# For Google Gemini:
+* For Google Gemini:
 export LLM_API_KEY="your-api-key-here"
 export LLM_BASE_URL="[https://generativelanguage.googleapis.com/v1beta/openai/](https://generativelanguage.googleapis.com/v1beta/openai/)"
 export LLM_MODEL="gemini-2.5-flash"
 
-# For Groq OpenAI-compatible endpoint:
+* For Groq OpenAI-compatible endpoint:
 export LLM_API_KEY="gsk_your-groq-api-key-here"
 export LLM_BASE_URL="[https://api.groq.com/openai/v1](https://api.groq.com/openai/v1)"
 export LLM_MODEL="openai/gpt-oss-20b"
